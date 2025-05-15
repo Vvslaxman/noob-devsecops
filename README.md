@@ -47,3 +47,24 @@ FROM sys.dm_db_index_usage_stats i
 WHERE database_id = DB_ID()
 ORDER BY AccessCount DESC;
 ```
+### Commonly used symbols in web.config file:
+
+| Symbol | Name           | Meaning / Usage                                              | Context                                                           |
+| ------ | -------------- | ------------------------------------------------------------ | ----------------------------------------------------------------- |
+| `/`    | Forward Slash  | Path separator in **URLs** and **Unix-based file systems**   | URLs: `http://example.com/page`<br>Linux paths: `/var/www`        |
+| `\`    | Backslash      | Path separator in **Windows file systems**                   | File path: `C:\MyFolder\MyFile.txt`                               |
+| `~`    | Tilde          | Represents **application root** in ASP.NET                   | `~/Images/logo.png` refers to the `Images` folder at the app root |
+| `:`    | Colon          | Used to separate **drive letters**, ports, or namespaces     | `C:\path`, `http://localhost:80`, `System.Web:`                   |
+| `.`    | Dot / Period   | Refers to current directory or used in extensions/namespaces | File: `index.html`, Namespace: `System.IO`                        |
+| `..`   | Double Dot     | Refers to **parent directory**                               | `../folder/file.txt` means "go up one level"                      |
+| `*`    | Asterisk       | Wildcard to match any string                                 | IIS handler paths like `path="*"`                                 |
+| `?`    | Question Mark  | Starts **query string** in a URL                             | `page.aspx?id=5`                                                  |
+| `&`    | Ampersand      | Separates query string parameters                            | `?id=5&name=John`                                                 |
+| `%`    | Percent        | Used in **URL encoding**                                     | `%20` = space, `%3A` = `:`                                        |
+| `#`    | Hash           | Refers to a fragment on the page                             | `page.html#section1`                                              |
+| `< >`  | Angle Brackets | Used to define **XML or HTML tags**                          | `<add ... />` in `web.config`                                     |
+| `"`    | Double Quotes  | Used to wrap attribute values                                | `key="value"`                                                     |
+| `'`    | Single Quote   | Also wraps strings (less common in XML)                      | `'value'`                                                         |
+| `=`    | Equals         | Assigns values to attributes                                 | `path="*.axd"`                                                    |
+| `;`    | Semicolon      | Separates key-value pairs in connection strings              | `Data Source=...;Initial Catalog=...`                             |
+
